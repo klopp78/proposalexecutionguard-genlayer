@@ -43,4 +43,14 @@ python -m unittest discover -s tests -v
 
 ## Studio deployment
 
-Deployment URL and a real assessment transaction will be added after Studio deployment. The deployed source must match `contracts/proposal_execution_guard.py`.
+- Contract: `0xA972D14f7029a6263645DB72ca46eeF81e088280`
+- Explorer: https://explorer-studio.genlayer.com/address/0xA972D14f7029a6263645DB72ca46eeF81e088280
+- Verified receipt: `peg_443f8cba63e00ce90477`
+
+The first finalized assessment checks Aave Governance proposal 359 against its Ethereum execution transaction. Validators received the official Aave proposal page, the Etherscan transaction, and the Aave governance discussion as independent public evidence:
+
+- https://vote.onaave.com/proposal/?ipfsHash=0x5c6bcd27cc94e27f40112647e0fde323c17706ce82746008ceae9d707deb0208&proposalId=359
+- https://etherscan.io/tx/0x7a41b0b367d7914389edfdf132c9031fb6379bb97e7b6b0139c02ffd087f1ded
+- https://governance.aave.com/t/arfc-claiming-aave-rewards-for-the-sablier-legacy-v1-1-contract/21975
+
+The deployed source matches `contracts/proposal_execution_guard.py`.
